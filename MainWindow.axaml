@@ -1,0 +1,17 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="IlkArayuzProjem.MainWindow"
+        Title="IlkArayuzProjem">
+
+
+    <StackPanel>
+        <TextBlock x:Name="durumYazisi" />
+        <ListBox x:Name="KomutListesi" SelectionChanged="KomutListesi_SelectionChanged" />
+        <Button x:Name="TemizleButonu" Content="Temizle" Click="TemizleButonu_Click" />
+        <TextBox x:Name="YeniKomutKutusu" Width="200" Height="30" PlaceholderText="Yeni Komut Girin" />
+        <Button x:Name="EkleButonu" Content="Ekle" Click="EkleButonu_Click" />
+    </StackPanel>
+</Window>
